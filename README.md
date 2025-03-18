@@ -1,0 +1,2 @@
+# AIIT_JAVA_Language_Programming_Assignments
+这个仓库用来保存安徽信息工程学院面对对象程序设计（JAVA）课的课后作业
