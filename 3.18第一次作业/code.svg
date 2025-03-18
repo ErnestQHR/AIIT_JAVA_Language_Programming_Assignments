@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <!-- 样式定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+    <marker id="diamond" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M0,6 L6,0 L12,6 L6,12 z" fill="#fff" stroke="#000" />
+    </marker>
+    <marker id="filledDiamond" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M0,6 L6,0 L12,6 L6,12 z" fill="#000" stroke="#000" />
+    </marker>
+    <marker id="generalization" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#fff" stroke="#000" />
+    </marker>
+  </defs>
+
+  <!-- WWF类 -->
+  <rect x="50" y="50" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="50" y1="80" x2="200" y2="80" stroke="#000" />
+  <line x1="50" y1="110" x2="200" y2="110" stroke="#000" />
+  <text x="125" y="70" text-anchor="middle" font-family="Arial" font-weight="bold">WWF</text>
+  <text x="60" y="100" font-family="Arial">- organizationName</text>
+  <text x="60" y="130" font-family="Arial">+ publishReport()</text>
+
+  <!-- 报告类 -->
+  <rect x="300" y="50" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="300" y1="80" x2="450" y2="80" stroke="#000" />
+  <line x1="300" y1="110" x2="450" y2="110" stroke="#000" />
+  <text x="375" y="70" text-anchor="middle" font-family="Arial" font-weight="bold">Report</text>
+  <text x="310" y="100" font-family="Arial">- title</text>
+  <text x="310" y="130" font-family="Arial">+ publish()</text>
+
+  <!-- 气候类 -->
+  <rect x="550" y="50" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="550" y1="80" x2="700" y2="80" stroke="#000" />
+  <line x1="550" y1="110" x2="700" y2="110" stroke="#000" />
+  <text x="625" y="70" text-anchor="middle" font-family="Arial" font-weight="bold">Climate</text>
+  <text x="560" y="100" font-family="Arial">- temperature</text>
+  <text x="560" y="130" font-family="Arial">+ changeTemperature()</text>
+
+  <!-- 企鹅种群类 -->
+  <rect x="550" y="200" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="550" y1="230" x2="700" y2="230" stroke="#000" />
+  <line x1="550" y1="260" x2="700" y2="260" stroke="#000" />
+  <text x="625" y="220" text-anchor="middle" font-family="Arial" font-weight="bold">PenguinPopulation</text>
+  <text x="560" y="250" font-family="Arial">- populationType</text>
+  <text x="560" y="280" font-family="Arial">+ respondToClimate()</text>
+
+  <!-- 企鹅类 -->
+  <rect x="300" y="200" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="300" y1="230" x2="450" y2="230" stroke="#000" />
+  <line x1="300" y1="260" x2="450" y2="260" stroke="#000" />
+  <text x="375" y="220" text-anchor="middle" font-family="Arial" font-weight="bold">Penguin</text>
+  <text x="310" y="250" font-family="Arial">- species</text>
+  <text x="310" y="280" font-family="Arial">+ swim()</text>
+
+  <!-- 企鹅翅膀类 -->
+  <rect x="50" y="200" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="50" y1="230" x2="200" y2="230" stroke="#000" />
+  <line x1="50" y1="260" x2="200" y2="260" stroke="#000" />
+  <text x="125" y="220" text-anchor="middle" font-family="Arial" font-weight="bold">PenguinWing</text>
+  <text x="60" y="250" font-family="Arial">- length</text>
+  <text x="60" y="280" font-family="Arial">+ paddle()</text>
+
+  <!-- 食物抽象类 -->
+  <rect x="300" y="350" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="300" y1="380" x2="450" y2="380" stroke="#000" />
+  <line x1="300" y1="410" x2="450" y2="410" stroke="#000" />
+  <text x="375" y="370" text-anchor="middle" font-family="Arial" font-style="italic" font-weight="bold">Food</text>
+  <text x="310" y="400" font-family="Arial">- nutritionValue</text>
+  <text x="310" y="430" font-family="Arial" font-style="italic">+ reproduce()</text>
+
+  <!-- 磷虾类 -->
+  <rect x="150" y="525" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="150" y1="555" x2="300" y2="555" stroke="#000" />
+  <line x1="150" y1="585" x2="300" y2="585" stroke="#000" />
+  <text x="225" y="545" text-anchor="middle" font-family="Arial" font-weight="bold">Krill</text>
+  <text x="160" y="575" font-family="Arial">- size</text>
+  <text x="160" y="605" font-family="Arial">+ reproduce()</text>
+
+  <!-- 乌贼类 -->
+  <rect x="300" y="525" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="300" y1="555" x2="450" y2="555" stroke="#000" />
+  <line x1="300" y1="585" x2="450" y2="585" stroke="#000" />
+  <text x="375" y="545" text-anchor="middle" font-family="Arial" font-weight="bold">Squid</text>
+  <text x="310" y="575" font-family="Arial">- inkAmount</text>
+  <text x="310" y="605" font-family="Arial">+ reproduce()</text>
+
+  <!-- 小鱼类 -->
+  <rect x="450" y="525" width="150" height="100" fill="#E6F5F9" stroke="#000" />
+  <line x1="450" y1="555" x2="600" y2="555" stroke="#000" />
+  <line x1="450" y1="585" x2="600" y2="585" stroke="#000" />
+  <text x="525" y="545" text-anchor="middle" font-family="Arial" font-weight="bold">SmallFish</text>
+  <text x="460" y="575" font-family="Arial">- fishType</text>
+  <text x="460" y="605" font-family="Arial">+ reproduce()</text>
+
+  <!-- 关系线 -->
+  <!-- WWF和报告的聚合关系 -->
+  <line x1="200" y1="100" x2="290" y2="100" stroke="#000" stroke-width="1.5" marker-end="url(#diamond)" />
+  <text x="245" y="90" font-family="Arial" font-size="12">reports</text>
+
+  <!-- 报告和气候的组合关系 -->
+  <line x1="450" y1="100" x2="540" y2="100" stroke="#000" stroke-width="1.5" marker-end="url(#filledDiamond)" />
+  <text x="495" y="90" font-family="Arial" font-size="12">climate</text>
+
+  <!-- 气候和企鹅种群的依赖关系 -->
+  <line x1="625" y1="150" x2="625" y2="190" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  <text x="645" y="170" font-family="Arial" font-size="12">affects</text>
+
+  <!-- 企鹅种群和企鹅的聚合关系 -->
+  <line x1="550" y1="250" x2="460" y2="250" stroke="#000" stroke-width="1.5" marker-end="url(#diamond)" />
+  <text x="505" y="240" font-family="Arial" font-size="12">penguins</text>
+
+  <!-- 企鹅和企鹅翅膀的组合关系 -->
+  <line x1="300" y1="250" x2="210" y2="250" stroke="#000" stroke-width="1.5" marker-end="url(#filledDiamond)" />
+  <text x="255" y="240" font-family="Arial" font-size="12">wing</text>
+
+  <!-- 企鹅和食物的依赖关系 -->
+  <line x1="375" y1="300" x2="375" y2="340" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  <text x="395" y="320" font-family="Arial" font-size="12">eats</text>
+
+  <!-- 气候和食物的依赖关系 -->
+  <path d="M700,100 Q750,200 450,350" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)" />
+  <text x="650" y="200" font-family="Arial" font-size="12">affects</text>
+
+  <!-- 食物和子类的泛化关系 -->
+  <line x1="225" y1="525" x2="300" y2="450" stroke="#000" stroke-width="1.5" marker-end="url(#generalization)" />
+  <line x1="375" y1="525" x2="375" y2="450" stroke="#000" stroke-width="1.5" marker-end="url(#generalization)" />
+  <line x1="525" y1="525" x2="450" y2="450" stroke="#000" stroke-width="1.5" marker-end="url(#generalization)" />
+</svg>
